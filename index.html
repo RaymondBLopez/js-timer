@@ -7,21 +7,32 @@
     <script src="timer.js" defer></script>
     <script src="index.js" defer></script>
     <title>Timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
-    <svg height="400" width="400">
-      <circle
-        r="190"
-        cx="200"
-        cy="200"
-        fill="transparent"
-        stroke="blue"
-        stroke-width="15"
-        transform="rotate(-90 200 200)"
-      />
-    </svg>
-    <input id="duration" type="text" value="30" />
-    <button id="start">Start</button>
-    <button id="pause">Pause</button>
+    <div class="timer">
+      <div class="controls">
+        <input id="duration" type="text" value="30" />
+        <div>
+          <button id="start"><i class="fas fa-play"></i></button>
+          <button id="pause"><i class="fas fa-pause"></i></button>
+        </div>
+      </div>
+      <svg class="dial">
+        <circle
+          r="190"
+          cx="200"
+          cy="200"
+          fill="transparent"
+          stroke="green"
+          stroke-width="15"
+          transform="rotate(-90 200 200)"
+        />
+      </svg>
+    </div>
   </body>
 </html>
